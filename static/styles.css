@@ -9,7 +9,7 @@
 }
 
 .section {
-    padding-top: 20px;
+    padding-top: 70px;
     background-color: rgb(255, 255, 255);
 }
 
@@ -23,7 +23,7 @@
 }
 
 .distros:hover {
-    box-shadow: 2px 2px 2px rgb(255, 230, 0);
+    box-shadow: 4px 4px 4px rgb(255, 230, 0);
 }
 .beginner_distros {
     position: sticky;
@@ -59,11 +59,29 @@
     width: 100%;
     bottom: 0;
     z-index: -1;
+    background-color: black;
 }
 .intermediate_distros:nth-child(2) {
     width: 100%;
     height: 100vh;
     bottom: 0;
     z-index: -2;
-    background-image: url("https://i.ytimg.com/vi/EnK4Z4UrOGo/maxresdefault.jpg");
+    background-image: url("https://forum.garudalinux.org/uploads/default/optimized/2X/3/3bf0daad1f208529ee918a42d0ce6575bd6fcde6_2_1380x776.jpeg");
+    background-position: center;
+}
+.intermediate_distros:nth-child(3) {
+    width: 100%;
+    height: 100vh;
+    bottom: 0;
+    z-index: -3;
+    background-image: url("https://cdn.pling.com/img/1/8/2/1/48865f70ae676a0b1f2c4ba69e72461ae15e.jpg");
+    background-position: center;
+}
+.intermediate_distros:nth-child(4) {
+    width: 100%;
+    height: 100vh;
+    bottom: 0;
+    z-index: -4;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/d/df/Fedora_Workstation_34.png");
+    background-position: center;
 }
