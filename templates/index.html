@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+{% block title %}
+    Hello
+{% endblock %}
+{% block body %}
+    <a class="nav-link" href="/logout" style = "font-family: Apple Chancery, cursive; color: rgb(238, 175, 235); text-align: right; text-decoration: underline;">Logout</a>
+    <div style = "text-align: start; background-color: black;" class="form-group">
+        <a href = "https://www.youtube.com/channel/UCajoTFWVZ93LV4gx0PTCAeQ" style = "position: absolute; left: 0; bottom: 70px;"><img src = "https://consideringapple.com/wp-content/uploads/2021/03/YouTube-Icon-black-8.jpg" width = "45"></a>
+    </div>
+    <div style = "text-align: start;background-color: black;" class="form-group">
+        <a href = "https://github.com/Advaith18" style = "position: absolute; left: 8px; bottom: 20px;"><img src = "https://cdn3.iconfinder.com/data/icons/inficons/512/github.png" width = "30"></a>
+    </div style = "text-align: start;background-color: black;" class="form-group">
+    <div style = "text-align: start;background-color: black;" class="form-group">
+        <a href = "mailto:tadvaith18@gmail.com" style = "position: absolute; left: 11px; bottom: 140px;"><img src = "https://i.pinimg.com/originals/74/fd/dc/74fddc59eefc5018c34914ecc934654a.png" width = "22"></a> 
+    </div>
+    <h1 style = " color: lightblue; text-align: center; font-weight: bold; padding-top: 4rem;">LINUX</h1>
+    <p style = "font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; padding-top: 30px;">The operating system that allows users to customize according to their own will.
+        <br>Made by <a href = "https://en.wikipedia.org/wiki/Linus_Torvalds" style = "font-family:Georgia, 'Times New Roman', Times, serif;">Linus Torvards</a> this operating system is used in many servers and personal computers.
+        <br>Perfect For Programmers Linux supports almost all of the major programming languages (Python, C/C++, Java, Perl, Ruby, etc.). 
+        <br>In contrast to windows or macos, you will find tons of Linux distributions catered for a different set of needs,
+        This are a few <a href = "" style = "font-family:Georgia, 'Times New Roman', Times, serif;">distros</a> I'd reccomend.
+    </p>
+    <img src = "https://i.ytimg.com/vi/_Ua-d9OeUOg/maxresdefault.jpg" width = "350" style = "float: center; border-radius: 10px; padding-top: 30px;">
+    <footer style = "text-align: center;"><img src = "https://i.pinimg.com/originals/16/53/c4/1653c4a60e0e5e48a5d60e9e37f07b16.gif" width = "300" style = "padding-top: 10px;"></footer>
+     
+
+    <section class = "section" style = "padding-left: 20px;">
+        <section class = "distros" style = "text-align: left;">
+            <a href = "/beginners" style = "color: black;" class="nav-link"><h3>Best distro for beginners :</h3></a>
+            <img src = "https://www.blackdown.org/wp-content/uploads/2020/06/Best-Linux-Distros-For-Beginners.jpg" width = "400" height = "200"style = "padding-left: 20px; padding-right: 20px; border-radius: 1rem;">            
+        </section>
+        <section class = "distros" style = "text-align: center;">
+            <a href = "/intermediate" style = "color: black;" class="nav-link"><h3>Best linux distros for users who used linux: </h3></a>
+            <img src = "https://webhostingprime.com/wp-content/uploads/2021/01/Best-Linux-Distro.png" width = "400" height = "200"style = "padding-right: 20px; border-radius: 1rem;">
+        </section>
+    </section>
+{% endblock %}
+

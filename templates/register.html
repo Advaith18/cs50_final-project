@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block title %}
+    Register
+{% endblock %}
+{% block body %}
+    <a class="nav-link" href="/login" style = "font-family: Apple Chancery, cursive; color: rgb(238, 175, 235); text-align: right; text-decoration: underline;">Login</a>
+    <form action = "/register" method = "post">
+        <h1 style = "text-align: center; padding-top: 75px; color: lightskyblue;">Register</h1>
+        <div style = "text-align: center; padding-top: 40px;">
+            <input type = "text" name = "username" placeholder = "Username" autocomplete = "off" style = "border-radius: 5px;border-color: lightskyblue;">
+        </div>
+        <div style = "text-align: center; padding-top: 20px;">
+            <input type = "password" name = "password" placeholder = "Password" autocomplete = "off" style = "border-radius: 5px; border-color: lightskyblue;">
+        </div>
+        <div style = "text-align: center; padding-top: 20px;">
+            <input type = "password" name = "confirmation" placeholder = "Confirm Password" autocomplete = "off" style = "border-radius: 5px; border-color: lightskyblue;">
+        </div>
+        <div style = "text-align: center; padding-top: 20px;">
+            <input type = "submit" name = "submit" value = "Register" style = " color: black; background-color: lightskyblue; border-radius: 5px;">
+        </div>
+    </form>
+{% endblock %}

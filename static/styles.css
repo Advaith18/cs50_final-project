@@ -1,0 +1,59 @@
+.body {
+    background-color: black; 
+    color: lightyellow; 
+    text-align: center;
+    position: sticky;
+    height: 100vh;
+    bottom: 0;
+    width: 100%;
+}
+
+.section {
+    padding-top: 20px;
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    bottom: 0;
+    width: 100%;
+}
+
+.distros {
+    display: table;
+    color: black;
+    font-weight: bold;
+    background-color: lightgrey;
+    padding-top: 20px;
+    border-radius: 5px; 
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.distros:hover {
+    box-shadow: 2px 2px 2px rgb(255, 230, 0);
+}
+.beginner_distros {
+    position: sticky;
+    height: 100vh;
+    width: 100%;
+    bottom: 0;
+    z-index: -1;
+}
+.beginner_distros:nth-child(2) {
+    height: 100vh;
+    width: 100%;
+    bottom: 0;
+    z-index: -2;
+    background-image: url("https://www.omgubuntu.co.uk/wp-content/uploads/2021/09/Impish-Indri-wallpaper-compressed.jpg");
+}
+.beginner_distros:nth-child(3) {
+    height: 100vh;
+    width: 100%;
+    bottom: 0;
+    background-image: url("https://www.opensourcefeed.org/screenshots/Zorin%2015.3/01%20Zorin%20Desktop.jpg");
+    z-index: -3;
+}
+.beginner_distros:nth-child(4) {
+    height: 100vh;
+    bottom: 0;
+    width: 100%;
+    background-image: url("https://res.cloudinary.com/practicaldev/image/fetch/s--WhEwVKNo--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/i/wgi1adme1ehsl210n85u.jpg");
+    z-index: -4;
+}
