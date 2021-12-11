@@ -70,4 +70,21 @@ def beginners():
 
 @app.route("/intermediate", methods = ["POST", "GET"])
 def intermediate():
+    if not session.get("user_id"):
+        return redirect("/login")
     return render_template("intermediate.html")
+
+
+@app.route("/fastest", methods = ["POST", "GET"])
+def fastest():
+    if not session.get("user_id"):
+        return redirect("/login")
+    return render_template("fastest.html")
+
+
+@app.route("/looks", methods = ["POST", "GET"])
+def looks():
+    if not session.get("user_id"):
+        return redirect("/login")
+    return render_template("looks.html")
+
