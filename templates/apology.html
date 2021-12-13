@@ -18,5 +18,11 @@
     {% elif apology == "username_not" %}
         <img src = "https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_1920/https://martech.org/wp-content/uploads/2014/08/oops-error-mistake-ss-1920.jpg" width = "1500" height = "500" style = "padding-left: 200px; padding-top: 100px;">
         <h1 style = "font-family: Copperplate, Papyrus, fantasy; text-align: center; padding-top: 1rem;">User not registered. Please register.</h1>
+    {% elif apology == "password_hash" %}
+    <img src = "https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_1920/https://martech.org/wp-content/uploads/2014/08/oops-error-mistake-ss-1920.jpg" width = "1500" height = "500" style = "padding-left: 200px; padding-top: 100px;">
+    <h1 style = "font-family: Copperplate, Papyrus, fantasy; text-align: center; padding-top: 1rem;">Please enter correct password</h1>
+    {% elif apology == "username_exists" %}
+    <img src = "https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_1920/https://martech.org/wp-content/uploads/2014/08/oops-error-mistake-ss-1920.jpg" width = "1500" height = "500" style = "padding-left: 200px; padding-top: 100px;">
+    <h1 style = "font-family: Copperplate, Papyrus, fantasy; text-align: center; padding-top: 1rem;">Username already exists.</h1>
     {% endif %}
 {% endblock %}

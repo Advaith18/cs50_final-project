@@ -22,12 +22,15 @@ def login():
     if request.method == "POST":
         username = request.form.get("username")
         password = request.form.get("password")
-        password_hash = generate_password_hash(password)
         user = db.execute("SELECT * FROM users WHERE username = ?", username)
         if not user:
             return render_template("apology.html", apology="username_not")
         elif user:
             rows = db.execute("SELECT id FROM users WHERE username = ?", username)
+            hashed = db.execute("SELECT password_hash FROM users WHERE id = ?", rows[0]["id"])
+            if not check_password_hash(hashed[0]["password_hash"], password):
+                return render_template("apology.html", apology = "password_hash")
+            
             session["user_id"] = rows[0]["id"]
             return redirect("/")
     elif request.method == "GET":
@@ -42,6 +45,7 @@ def register():
         username = request.form.get("username")
         password = request.form.get("password")
         confirmation = request.form.get("confirmation")
+        username_existance = db.execute("SELECT * FROM users WHERE username  = ?", username)
         if not username:
             return render_template("apology.html", apology="no_username")
         elif not password:
@@ -50,6 +54,8 @@ def register():
             return render_template("apology.html", apology="no_confirmation")
         elif confirmation != password:
             return render_template("apology.html", apology="no_match")
+        elif username_existance:
+            return render_template("apology.html", apology = "username_exists")
         else:
             password_hashed = generate_password_hash(password)
             db.execute("INSERT INTO users(username, password_hash) VALUES(?, ?)", username, password_hashed)
