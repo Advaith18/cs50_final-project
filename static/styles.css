@@ -16,7 +16,8 @@
 }
 
 .distros {
-    display: table;
+    display: inline-block;
+    text-align: left;
     color: black;
     font-weight: bold;
     background-color: lightgrey;
@@ -86,4 +87,30 @@
     z-index: -4;
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/d/df/Fedora_Workstation_34.png");
     background-position: center;
+}
+
+
+.fastest_distros { 
+    position: sticky;
+    width: 100%;
+    height: 100vh;
+    bottom: 0;
+    background-color: black;
+    z-index: -1;
+}
+.fastest_distros:nth-child(2) {
+    width: 100%;
+    height: 100vh;
+    bottom: 0;
+    background-image: url("https://i1.wp.com/manjaro.site/wp-content/uploads/2018/06/Linux-lite-4.0-desktop.png?fit=1920%2C950&ssl=1");
+    background-position: center; 
+    z-index: -2;
+}
+.fastest_distros:nth-child(3) {
+    width: 100%;
+    height: 100vh;
+    bottom: 0;
+    background-image: url("https://wallpapercave.com/wp/wp3774443.png");
+    background-position: center;
+    z-index: -3;
 }
