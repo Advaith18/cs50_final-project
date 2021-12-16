@@ -11,7 +11,9 @@
 .section {
     background-color: rgb(255, 255, 255);
     padding-right: 80rem;
+    padding: 2px;
     width: 100%;
+    display: flex;
 }
 
 .distros {

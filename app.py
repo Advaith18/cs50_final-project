@@ -94,3 +94,8 @@ def looks():
         return redirect("/login")
     return render_template("looks.html")
 
+@app.route("/beautiful", methods = ["POST", "GET"])
+def beautiful():
+    if not session.get("user_id"):
+        return redirect("index.html")
+    return render_template("beautifyl.html")
