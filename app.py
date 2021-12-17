@@ -98,4 +98,4 @@ def looks():
 def beautiful():
     if not session.get("user_id"):
         return redirect("index.html")
-    return render_template("beautifyl.html")
+    return render_template("beautiful.html")

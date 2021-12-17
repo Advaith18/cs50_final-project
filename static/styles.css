@@ -9,9 +9,9 @@
 }
 
 .section {
-    background-color: rgb(255, 255, 255);
+    background-color: black;
     padding-right: 80rem;
-    padding: 2px;
+    padding: 1px;
     width: 100%;
     display: flex;
 }
