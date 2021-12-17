@@ -126,3 +126,29 @@
     background-position: center;
     z-index: -4;
 }
+
+.beautiful_distros {
+    position: sticky;
+    width: 100%;
+    height: 100vh;
+    bottom: 0;
+    background-color: black;
+    z-index: -1;
+}
+
+.beautiful_distros:nth-child(2) {
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://bettermousetraps.net/images/wallpapers/solus_4.1/LakeSideView.jpg");
+    background-position: center;
+    z-index: -2;
+}
+
+.beautiful_distros:nth-child(3) {
+    width: 100%;
+    height: 100vh;
+    z-index: -3;
+    background-image: url("https://wallpaperaccess.com/full/2130176.jpg");
+    background-position: center;
+}
+
