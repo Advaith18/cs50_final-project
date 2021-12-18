@@ -152,3 +152,9 @@
     background-position: center;
 }
 
+.beautiful_distros:nth-child(4) {
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://forum.garudalinux.org/uploads/default/original/2X/e/e42f8fa6a54a8172df2564785d261a8215a079e1.jpeg");
+    z-index: -4;
+}
