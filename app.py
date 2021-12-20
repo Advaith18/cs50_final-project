@@ -99,3 +99,10 @@ def beautiful():
     if not session.get("user_id"):
         return redirect("index.html")
     return render_template("beautiful.html")
+
+
+@app.route("/about_us", methods = ["POST", "GET"])
+def about_us():
+    if not session.get("user_id"):
+        return redirect("/login")
+    return render_template("about_us.html")
