@@ -11,6 +11,7 @@ db = SQL("sqlite:///finance.db")
 
 @app.route("/", methods = ["POST", "GET"])
 def index():
+    # Checking if user logged in or not.
     if not session.get("user_id"):
         return redirect("/login")
     return render_template("index.html")
@@ -22,6 +23,7 @@ def login():
     if request.method == "POST":
         username = request.form.get("username")
         password = request.form.get("password")
+        # Checking if user is present in the database.
         user = db.execute("SELECT * FROM users WHERE username = ?", username)
         if not user:
             return render_template("apology.html", apology="username_not")
@@ -58,24 +60,28 @@ def register():
             return render_template("apology.html", apology = "username_exists")
         else:
             password_hashed = generate_password_hash(password)
+            # Inserting user into database..
             db.execute("INSERT INTO users(username, password_hash) VALUES(?, ?)", username, password_hashed)
             return redirect("/login")
 
 
 @app.route("/logout", methods = ["POST", "GET"])
 def logout():
+    # clearing sessions.
     session.clear()
     return redirect("/login")
 
 
 @app.route("/beginners", methods = ["POST", "GET"])
 def beginners():
+    # Checking if user logged in or not.
     if not session.get("user_id"):
         return redirect("/login")
     return render_template("beginners.html")
 
 @app.route("/intermediate", methods = ["POST", "GET"])
 def intermediate():
+    # Checking if user logged in or not.
     if not session.get("user_id"):
         return redirect("/login")
     return render_template("intermediate.html")
@@ -83,6 +89,7 @@ def intermediate():
 
 @app.route("/fastest", methods = ["POST", "GET"])
 def fastest():
+    # Checking if user logged in or not.
     if not session.get("user_id"):
         return redirect("/login")
     return render_template("fastest.html")
@@ -90,12 +97,14 @@ def fastest():
 
 @app.route("/looks", methods = ["POST", "GET"])
 def looks():
+    # Checking if user logged in or not.
     if not session.get("user_id"):
         return redirect("/login")
     return render_template("looks.html")
 
 @app.route("/beautiful", methods = ["POST", "GET"])
 def beautiful():
+    # Checking if user logged in or not.
     if not session.get("user_id"):
         return redirect("index.html")
     return render_template("beautiful.html")
@@ -103,6 +112,7 @@ def beautiful():
 
 @app.route("/about_us", methods = ["POST", "GET"])
 def about_us():
+    # Checking if user logged in or not.
     if not session.get("user_id"):
         return redirect("/login")
     return render_template("about_us.html")
