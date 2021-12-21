@@ -47,6 +47,7 @@ def register():
         username = request.form.get("username")
         password = request.form.get("password")
         confirmation = request.form.get("confirmation")
+        # Checking if username is already there in the database.
         username_existance = db.execute("SELECT * FROM users WHERE username  = ?", username)
         if not username:
             return render_template("apology.html", apology="no_username")
@@ -59,6 +60,7 @@ def register():
         elif username_existance:
             return render_template("apology.html", apology = "username_exists")
         else:
+            # Hashing the password provided byy the user.
             password_hashed = generate_password_hash(password)
             # Inserting user into database..
             db.execute("INSERT INTO users(username, password_hash) VALUES(?, ?)", username, password_hashed)
