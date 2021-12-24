@@ -165,3 +165,22 @@
     height: 93vh;
     background-image: url("https://images.unsplash.com/photo-1475274047050-1d0c0975c63e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max");
 }
+
+#yes {
+    padding: 3%;
+    border-radius: 6px;
+    background-color: rgb(167, 242, 255); 
+}
+#no {
+    padding: 3%;
+    border-radius: 6px;
+    background-color: rgb(167, 242, 255); 
+}
+#yes:hover {
+    transition: 2s;
+    background-color: lightgreen;
+}
+#no:hover {
+    transition: 2s;
+    background-color: rgb(248, 139, 139);
+}
