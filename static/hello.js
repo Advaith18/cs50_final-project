@@ -4,8 +4,13 @@ document.addEventListener("DOMContentLoaded", function() {
     let hidden = document.querySelector("#hidden");
     no.addEventListener("click", function () {
         hidden.type = "text";
+        yes.addEventListener("click", function () {
+            hidden.type = "hidden";
+        });
     });
-    hidden.addEventListener("onsubmit", function () {
-        alert("Feedback has been submitted. Thank You!");
+    hidden.addEventListener("keypress", function (e) {
+        if (e.key == "Enter"){
+            alert("Feedback has been submitted. Thank You!");
+        }    
     }); 
 });
