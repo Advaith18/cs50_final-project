@@ -118,3 +118,14 @@ def about_us():
     if not session.get("user_id"):
         return redirect("/login")
     return render_template("about_us.html")
+
+
+@app.route("/feedback", methods = ["POST", "GET"])
+def feedback():
+    # Checking if user logged in or did not login.
+    if not session.get("user_id"):
+        return redirect("/login")
+    # Getting username from users table using SQL function from cs50 library which is very nice.
+    username = db.execute("SELECT username FROM users WHERE id = ?", session["user_id"])[0]["username"]
+    return render_template("feedback.html", username = username)
+
