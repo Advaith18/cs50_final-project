@@ -131,6 +131,6 @@ def feedback():
         return render_template("feedback.html", username = username)
     else:
         username = db.execute("SELECT username FROM users WHERE id = ?;", session["user_id"])[0]["username"]
-        feedback = request.form.get("hidden")
-        db.execute("INSERT INTO feedbacks(user_id, username, feedback) VALUES(?, ?, ?);", session["user_id"], username, feedback)
-        return render_template("feedback.html", username = username)
+        feedback_post = request.form.get("hidden")
+        db.execute("INSERT INTO feedbacks(user_id, username, feedback) VALUES(?, ?, ?)", session["user_id"], username, feedback_post)
+        return render_template("feedback.html", username = feedback_post)
