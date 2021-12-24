@@ -122,10 +122,14 @@ def about_us():
 
 @app.route("/feedback", methods = ["POST", "GET"])
 def feedback():
-    # Checking if user logged in or did not login.
-    if not session.get("user_id"):
-        return redirect("/login")
-    # Getting username from users table using SQL function from cs50 library which is very nice.
-    username = db.execute("SELECT username FROM users WHERE id = ?", session["user_id"])[0]["username"]
-    return render_template("feedback.html", username = username)
-
+    if request.method == "GET":
+        # Checking if user logged in or did not login.
+        if not session.get("user_id"):
+            return redirect("/login")
+        # Getting username from users table using SQL function from cs50 library which is very nice.
+        username = db.execute("SELECT username FROM users WHERE id = ?;", session["user_id"])[0]["username"]
+        return render_template("feedback.html", username = username)
+    else:
+        username = db.execute("SELECT username FROM users WHERE id = ?;", session["user_id"])[0]["username"]
+        db.execute("INSERT INTO feedbacks(user_id, username, feedback) VALUES(?, ?, ?);", session["user_id"], username, request.form.get("#hidden"))
+        return render_template("feedback.html", username = username)
