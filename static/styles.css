@@ -7,6 +7,10 @@
     bottom: 0;
     width: 100%;
 }
+::selection {
+    background-color: rgb(253, 255, 163);
+    color: #25395C;
+}
 
 .section {
     background-color: black;
