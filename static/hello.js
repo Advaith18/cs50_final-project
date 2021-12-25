@@ -15,6 +15,6 @@ document.addEventListener("DOMContentLoaded", function() {
         }    
     }); 
     yes.addEventListener("click", function () {
-        alert("Feedback has been submitted. Thank You!");
+        alert("Thank You! Happy that you found the right distro.");
     });
 });

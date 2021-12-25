@@ -177,10 +177,21 @@
     background-color: rgb(167, 242, 255); 
 }
 #yes:hover {
-    transition: 2s;
+    transition-duration: 2s;
     background-color: lightgreen;
 }
 #no:hover {
     transition: 2s;
     background-color: rgb(248, 139, 139);
+}
+
+.href {
+    padding: 0.8%;
+}
+
+.href:hover {
+    transition-duration: 1.5s;
+    text-decoration: none;
+    border-radius: 13px;
+    background-color: rgb(0, 0, 0);
 }
