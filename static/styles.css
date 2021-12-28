@@ -10,7 +10,7 @@
     width: 100%;
 }
 ::selection {
-    background-color: rgb(253, 255, 163);
+    background-color: #D0E1F9;
     color: #25395C;
 }
 
@@ -55,9 +55,11 @@
     height: 100vh;
     width: 100%;
     bottom: 0;
-    background-image: url("https://www.opensourcefeed.org/screenshots/Zorin%2015.3/01%20Zorin%20Desktop.jpg");
+    background-image: url("https://cutewallpaper.org/22/zorin-os-wallpapers/150297329.jpg");
+    background-position: center;
     z-index: -3;
 }
+
 .beginner_distros:nth-child(4) {
     height: 100vh;
     bottom: 0;
@@ -128,7 +130,7 @@
     width: 100%;
     height: 100vh;
     bottom: 0;
-    background-image: url("https://www.opensourcefeed.org/screenshots/Zorin%2015.3/01%20Zorin%20Desktop.jpg");
+    background-image: url("https://cutewallpaper.org/22/zorin-os-wallpapers/150297329.jpg");
     background-position: center;
     z-index: -4;
 }
