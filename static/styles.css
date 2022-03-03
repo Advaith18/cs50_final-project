@@ -48,14 +48,12 @@
     width: 100%;
     bottom: 0;
     z-index: -2;
-    background-image: url("https://www.omgubuntu.co.uk/wp-content/uploads/2021/09/Impish-Indri-wallpaper-compressed.jpg");
 }
 
 .beginner_distros:nth-child(3) {
     height: 100vh;
     width: 100%;
     bottom: 0;
-    background-image: url("https://cutewallpaper.org/22/zorin-os-wallpapers/150297329.jpg");
     background-position: center;
     z-index: -3;
 }
@@ -64,9 +62,9 @@
     height: 100vh;
     bottom: 0;
     width: 100%;
-    background-image: url("https://res.cloudinary.com/practicaldev/image/fetch/s--WhEwVKNo--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/i/wgi1adme1ehsl210n85u.jpg");
     z-index: -4;
 }
+
 .intermediate_distros {
     position: sticky;
     height: 100vh;
@@ -80,7 +78,6 @@
     height: 100vh;
     bottom: 0;
     z-index: -2;
-    background-image: url("https://forum.garudalinux.org/uploads/default/optimized/2X/3/3bf0daad1f208529ee918a42d0ce6575bd6fcde6_2_1380x776.jpeg");
     background-position: center;
 }
 .intermediate_distros:nth-child(3) {
@@ -88,7 +85,6 @@
     height: 100vh;
     bottom: 0;
     z-index: -3;
-    background-image: url("https://cdn.pling.com/img/1/8/2/1/48865f70ae676a0b1f2c4ba69e72461ae15e.jpg");
     background-position: center;
 }
 .intermediate_distros:nth-child(4) {
@@ -96,7 +92,6 @@
     height: 100vh;
     bottom: 0;
     z-index: -4;
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/d/df/Fedora_Workstation_34.png");
     background-position: center;
 }
 
@@ -113,7 +108,6 @@
     width: 100%;
     height: 100vh;
     bottom: 0;
-    background-image: url("https://i1.wp.com/manjaro.site/wp-content/uploads/2018/06/Linux-lite-4.0-desktop.png?fit=1920%2C950&ssl=1");
     background-position: center; 
     z-index: -2;
 }
@@ -121,7 +115,6 @@
     width: 100%;
     height: 100vh;
     bottom: 0;
-    background-image: url("https://wallpapercave.com/wp/wp3774443.png");
     background-position: center;
     z-index: -3;
 }
@@ -130,7 +123,6 @@
     width: 100%;
     height: 100vh;
     bottom: 0;
-    background-image: url("https://cutewallpaper.org/22/zorin-os-wallpapers/150297329.jpg");
     background-position: center;
     z-index: -4;
 }
@@ -147,7 +139,6 @@
 .beautiful_distros:nth-child(2) {
     width: 100%;
     height: 100vh;
-    background-image: url("https://bettermousetraps.net/images/wallpapers/solus_4.1/LakeSideView.jpg");
     background-position: center;
     z-index: -2;
 }
@@ -156,14 +147,12 @@
     width: 100%;
     height: 100vh;
     z-index: -3;
-    background-image: url("https://wallpaperaccess.com/full/2130176.jpg");
     background-position: center;
 }
 
 .beautiful_distros:nth-child(4) {
     width: 100%;
     height: 100vh;
-    background-image: url("https://forum.garudalinux.org/uploads/default/original/2X/e/e42f8fa6a54a8172df2564785d261a8215a079e1.jpeg");
     z-index: -4;
 }
 
@@ -171,7 +160,7 @@
 .about_us {
     width: 100%;
     height: 93vh;
-    background-image: url("https://ak.picdn.net/shutterstock/videos/9196214/thumb/1.jpg?ip=x480");
+    background-position: center;
 }
 
 #yes {
