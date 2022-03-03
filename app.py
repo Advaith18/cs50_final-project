@@ -134,3 +134,7 @@ def feedback():
         feedback_post = request.form.get("hidden")
         db.execute("INSERT INTO feedbacks(user_id, username, feedback) VALUES(?, ?, ?)", session["user_id"], username, feedback_post)
         return render_template("feedback.html", username = username)
+
+
+if __name__ == "__main__":
+    app.run()
