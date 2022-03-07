@@ -136,5 +136,5 @@ def feedback():
         return render_template("feedback.html", username = username)
 
 
-if __name__ == "__main__":
-    app.run()
+
+    
